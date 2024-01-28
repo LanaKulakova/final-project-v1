@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/final-project-v1/static/css/main.eb792b47.css",
+    "main.js": "/final-project-v1/static/js/main.aa955429.js",
+    "static/js/787.b2ee83ea.chunk.js": "/final-project-v1/static/js/787.b2ee83ea.chunk.js",
+    "static/media/staffSix.jpg": "/final-project-v1/static/media/staffSix.697576e11c9b1dbd711e.jpg",
+    "static/media/founder.jpg": "/final-project-v1/static/media/founder.f01be2b0be21fadbdc18.jpg",
+    "static/media/staffFour.jpg": "/final-project-v1/static/media/staffFour.6d12b417cc72561fd2a8.jpg",
+    "static/media/StaffSeven.jpg": "/final-project-v1/static/media/StaffSeven.e5e467d4289c26373c1c.jpg",
+    "static/media/staffTwo.jpg": "/final-project-v1/static/media/staffTwo.11cd97b78fb46876195c.jpg",
+    "static/media/StaffEight.jpg": "/final-project-v1/static/media/StaffEight.17d3d215dfcdefc5c726.jpg",
+    "static/media/staffThree.jpg": "/final-project-v1/static/media/staffThree.9139481ce512c0f34b2a.jpg",
+    "static/media/staffOne.jpg": "/final-project-v1/static/media/staffOne.1b9e814b98f3cd6287de.jpg",
+    "static/media/song.mp3": "/final-project-v1/static/media/song.528cec0cc428355c29a5.mp3",
+    "static/media/staffFive.jpg": "/final-project-v1/static/media/staffFive.bbe4d31417ee128bb471.jpg",
+    "static/media/coverphoto.jpg": "/final-project-v1/static/media/coverphoto.d17559bd3fb01f7fd14e.jpg",
+    "index.html": "/final-project-v1/index.html",
+    "main.eb792b47.css.map": "/final-project-v1/static/css/main.eb792b47.css.map",
+    "main.aa955429.js.map": "/final-project-v1/static/js/main.aa955429.js.map",
+    "787.b2ee83ea.chunk.js.map": "/final-project-v1/static/js/787.b2ee83ea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb792b47.css",
+    "static/js/main.aa955429.js"
+  ]
+}
