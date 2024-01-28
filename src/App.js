@@ -18,7 +18,7 @@ function App() {
 
 <Router>
     <nav>
-    <Link to="/" className="link textcolor" >Home</Link>
+    <Link to="/home" className="link textcolor" >Home</Link>
     <Link to="/about" className="link textcolor">About </Link>
     <Link to="/staff" className="link textcolor">Staff</Link>
     <Link to="/shop" className="link textcolor">Shop</Link>

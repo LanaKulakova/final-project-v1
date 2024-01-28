@@ -62,7 +62,7 @@ return  <div>
 <div>
 <h2 className="section">Book trial lesson now!</h2>
 <div className="calltoaction">
-<a href="/contact" target="_blank"> <button className="btnCall"> Contact us</button></a>
+<a href="/contact" > <button className="btnCall"> Contact us</button></a>
 </div>
 </div>
 
