@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { dataAbout } from "./dataAbout";
 import "./App.css";
 import founder from "./founder.jpg";
@@ -92,7 +93,7 @@ return (
 <h2 className="section">Book trial lesson now!</h2>
 
 <div className="calltoaction">
-<a href="/final-project-v1/contact" > <button className="btnCall"> Contact us</button></a>
+<Link to="/contact" > <button className="btnCall"> Contact us</button></Link>
 </div>
 </div>
 
