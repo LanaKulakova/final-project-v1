@@ -51,7 +51,7 @@ const handlePlay =() => {
 <hr></hr>    
 
     <div className="cover" >
-<img src={coverphoto} width="1366px" alt="coverphoto"  />
+<img className="coverMobile" src={coverphoto} width="1366px" alt="coverphoto"  />
 </div>
 
 <div>

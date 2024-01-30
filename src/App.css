@@ -271,16 +271,14 @@ button {
   }
 
   .link {
-    padding: 5px 10px;
+    padding: 10px 30px;
     text-decoration: none;
-    color: black;
+    color: #F9F4F4;
     text-transform: uppercase;
     
   }
-  .cover {
-    width: 50px;
-    background-repeat: no-repeat;
-    background-size: auto;
+  .coverMobile {
+    background-size: 30%;
       
   }
 
