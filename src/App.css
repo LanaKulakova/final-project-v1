@@ -249,13 +249,12 @@ button {
 
 
 
-@media all and (max-width: 800px) {
+@media (max-width: 800px) {
   nav {
     padding: 5px;
   }
 
   .cover {
-    background-repeat: no-repeat;
     width: 200px;
   }
 
