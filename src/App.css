@@ -249,7 +249,7 @@ button {
 
 
 
-@media (max-width: 800px) {
+@media all and(max-width: 800px) {
   nav {
     padding: 5px;
   }
