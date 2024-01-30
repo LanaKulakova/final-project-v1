@@ -1,13 +1,29 @@
-import {useState, useRef} from "react";
+import {useState, useRef, useEffect} from "react";
 import './App.css';
-import logo from "./logo.png";
+import logonew from "./logonew.png";
 import coverphoto from "./coverphoto.jpg";
 import song from "./song.mp3";
 import {Route, Routes, useNavigate} from 'react-router-dom';
 import Contact from "./Contact";
+import ball from "./ball.png";
+import gsap from "gsap";
 
 
 function Home() {
+
+    let ballItem = useRef(null);
+    useEffect( () => {
+        gsap.to(
+            ballItem,
+                        {
+                rotation: 360,
+                y: +3,
+                x: +700,
+                duration: 3,
+                delay: .2,
+            }
+        )
+    }, [])
 
     const navigate = useNavigate();
     const navigateToContacts = () => {
@@ -23,10 +39,16 @@ const handlePlay =() => {
 
     return (
     <div className="App">
-    
-    <div className="logo">
-    <img src={logo} width="300px" alt="companylogo" />
+
+<hr></hr>
+<div className="bounceBall">
+    <img ref = {element => {ballItem=element}} src={ball} width="30px" alt="ball"  />
     </div>
+
+    <div className="logo">
+    <img src={logonew} width="300px" alt="companylogo" />
+    </div>  
+<hr></hr>    
 
     <div className="cover">
 <img src={coverphoto} width="1366px" alt="coverphoto" />
@@ -42,7 +64,6 @@ const handlePlay =() => {
     </ul>
 </div>
 
-
 <div>
 <h2 className="section">Book trial lesson now!</h2>
 
@@ -55,14 +76,11 @@ const handlePlay =() => {
 </div>
 
 <hr></hr>
-
-
 <div className="treck">
     <p className="treckOfDay">&#127911; Listen TRACK OF THE DAY while browsing: </p>
     <audio src={song} loop="loop" ref={refAudio}></audio>
     <button onClick={handlePlay} className="btnTrack"> {musicPlay ? 'Play' : 'Pause'} </button>
 </div>
-
 
 <div className="down">
     
@@ -70,13 +88,8 @@ const handlePlay =() => {
         <p> Website Designed by Svetlana Kulakova</p>
     
 </div>
-
-
-    </div>
-
-
+</div>
 );
-
 }
 
 export default Home;

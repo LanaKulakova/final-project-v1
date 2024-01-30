@@ -25,7 +25,6 @@ function App() {
     <Link to="/contact" className="link textcolor">Contact</Link>
   </nav>
 
-
 <Routes>
   <Route path="/final-project-v1" element={<Home />} />
   <Route path="/about" element={<About />} />
@@ -34,7 +33,6 @@ function App() {
   <Route path="/contact" element={<Contact />} /> 
 </Routes> 
 </Router>
-
 
   )
 }

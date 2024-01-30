@@ -1,16 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { dataAbout } from "./dataAbout";
 import "./App.css";
+import logonew from "./logonew.png";
 import founder from "./founder.jpg";
-import logo from "./logo.png";
 import { Accordion } from "./Accordion/Accordion";
 import {Route, Routes, useNavigate} from 'react-router-dom';
 import Contact from "./Contact";
+import gsap from "gsap";
+import ball from "./ball.png";
 
 
 
 function About() 
 {
+    let ballItem = useRef(null);
+    useEffect( () => {
+        gsap.to(
+            ballItem,
+                        {
+                rotation: 360,
+                y: +3,
+                x: +700,
+                duration: 3,
+                delay: .2,
+                }
+        )
+    }, [])
+
     const navigate = useNavigate();
     const navigateToContacts = () => {
         navigate('/contact');
@@ -26,12 +42,18 @@ const showTextClick = (item) => {
     setShowText(!showText)
 }
 
-    return (
-    <div>
+    return ( <div>
+<hr></hr>
 
-<div className="logo">
-    <img src={logo} width="300px" alt="companylogo" />
+<div className="bounceBall">
+    <img ref = {element => {ballItem=element}} src={ball} width="30px" alt="ball"  />
     </div>
+
+    <div className="logo">
+    <img src={logonew} width="300px" alt="companylogo" />
+    </div>  
+<hr></hr>    
+
 <div>
     <h2 className="section"> About us </h2>
 </div>
@@ -61,7 +83,6 @@ const showTextClick = (item) => {
 <div>
 <h2 className="section"> We can offer: </h2>
 </div>
-
 
 {pic.map((item => {
 const {id, description, image, showMore} = item;
