@@ -76,12 +76,17 @@ ul {
 
 .founder {
   display: flex;
+  justify-content: center;
+}
+
+.photoFounder {
+margin-top: 20px;
 }
 
 .parAbout {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-right: 10px;
 }
 
@@ -249,7 +254,18 @@ button {
 
 
 
-@media (max-width: 800px) {
+@media all and (max-width: 800px) {
+  nav {
+    padding: 5px;
+  }
+
+  .cover {
+    width: 200px;
+  }
+
+}
+
+@media all and (max-width: 500px) {
   nav {
     padding: none;
   }
@@ -258,5 +274,10 @@ button {
     width: 200px;
   }
 
+  .founder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 }

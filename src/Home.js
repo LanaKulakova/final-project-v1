@@ -9,9 +9,9 @@ import ball from "./ball.png";
 import gsap from "gsap";
 
 
-function Home() {
 
-    let ballItem = useRef(null);
+function Home() {
+      let ballItem = useRef(null);
     useEffect( () => {
         gsap.to(
             ballItem,
@@ -50,8 +50,8 @@ const handlePlay =() => {
     </div>  
 <hr></hr>    
 
-    <div className="cover">
-<img src={coverphoto} width="1366px" alt="coverphoto" />
+    <div className="cover" >
+<img src={coverphoto} width="1366px" alt="coverphoto"  />
 </div>
 
 <div>
