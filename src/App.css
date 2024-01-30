@@ -250,18 +250,13 @@ button {
 
 
 @media all and (max-width:800px) {
-body {
-  height: 100vh;
-  }
-
   nav {
     padding: 5px;
   }
 
   .cover {
     background-repeat: no-repeat;
-    background-size: 300px;
-    width: 300px;
+    width: 200px;
   }
 
 
