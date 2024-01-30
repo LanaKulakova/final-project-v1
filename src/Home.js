@@ -38,7 +38,7 @@ const handlePlay =() => {
 }
 
     return (
-    <div className="App">
+    <div>
 
 <hr></hr>
 <div className="bounceBall">

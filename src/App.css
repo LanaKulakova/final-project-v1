@@ -267,11 +267,12 @@ button {
 
 @media all and (max-width: 500px) {
   nav {
-    padding: none;
+    display: flex;
+    justify-content: left;
   }
 
   .cover {
-    width: 200px;
+    width: 50px;
   }
 
   .founder {

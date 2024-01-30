@@ -59,9 +59,13 @@ const showTextClick = (item) => {
 </div>
 
 <div className="founder">
+
+<div className="photoFounder">
+    <img src={founder} alt="founder" width="350px"/>
+</div>
+
 <div className="parAbout">
-    <p>
-    Match Point Tennis Academy was set up in 2018 to provide tennis education for
+    <p>Match Point Tennis Academy was set up in 2018 to provide tennis education for
     a wide variety of ages and ability. Our programme is designed to provide an 
     opportunity for players to develop their technical     and tactical ability, 
     whilst improving their fitness and health. </p>
@@ -74,9 +78,6 @@ const showTextClick = (item) => {
     repetition and practice.
     </p>
     <p> <b>Anna Smith, Founder</b></p>
-</div>
-<div>
-    <img src={founder} alt="founder" width="350px"/>
 </div>
 </div>
 
