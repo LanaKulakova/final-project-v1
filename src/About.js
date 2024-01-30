@@ -1,15 +1,20 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { dataAbout } from "./dataAbout";
 import "./App.css";
 import founder from "./founder.jpg";
 import logo from "./logo.png";
 import { Accordion } from "./Accordion/Accordion";
+import {Route, Routes, useNavigate} from 'react-router-dom';
+import Contact from "./Contact";
 
 
 
-
-function About() {
+function About() 
+{
+    const navigate = useNavigate();
+    const navigateToContacts = () => {
+        navigate('/contact');
+    };
 
 const [pic, setPic] = useState(dataAbout);
 
@@ -93,7 +98,10 @@ return (
 <h2 className="section">Book trial lesson now!</h2>
 
 <div className="calltoaction">
-<Link to="/contact" > <button className="btnCall"> Contact us</button></Link>
+<button className="btnCall" onClick={navigateToContacts}> Contact us</button>
+<Routes>
+        <Route path="/contacts" element={<Contact />} />
+                </Routes>
 </div>
 </div>
 

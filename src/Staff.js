@@ -2,9 +2,16 @@ import { useState } from "react";
 import { dataStaff } from "./dataStaff";
 import "./App.css";
 import logo from "./logo.png";
-
+import {Route, Routes, useNavigate} from 'react-router-dom';
+import Contact from "./Contact";
 
 function Staff() {
+
+    const navigate = useNavigate();
+    const navigateToContacts = () => {
+        navigate('/contact');
+    }; 
+
 const [coach, setCoach] = useState(0);
 const {id, image, name, position, description} = dataStaff[coach]
 
@@ -61,8 +68,12 @@ return  <div>
 <hr></hr>
 <div>
 <h2 className="section">Book trial lesson now!</h2>
+
 <div className="calltoaction">
-<a href="/final-project-v1/contact" > <button className="btnCall"> Contact us</button></a>
+<button className="btnCall" onClick={navigateToContacts}> Contact us</button>
+<Routes>
+        <Route path="/contacts" element={<Contact />} />
+                </Routes>
 </div>
 </div>
 

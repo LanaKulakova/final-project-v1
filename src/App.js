@@ -3,8 +3,8 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
-} from "react-router-dom";
+  Link,
+  } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Staff from "./Staff";
