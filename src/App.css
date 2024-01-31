@@ -254,12 +254,43 @@ button {
 
 @media all and (max-width: 800px) {
   nav {
-    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
   }
 
-  .cover {
-    width: 200px;
+  .link {
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #F9F4F4;
+    text-transform: uppercase;
+    
   }
+  .coverMobile {
+    background-position: center center;
+    width: 400px;
+    height: 300px;
+    margin-left: 30px;
+  
+    }
+
+  .founder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.contButtons {
+  flex-wrap: wrap;
+}
+
+.product-card {
+  margin-left: 30px;
+}
+
+.bounceBall {
+  animation-name: none;
+}
 
 }
 
