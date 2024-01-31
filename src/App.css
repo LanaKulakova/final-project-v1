@@ -278,6 +278,7 @@ button {
   }
   .coverMobile {
     background-position: center center;
+    background-image: url(coverphotoMobile.jpg);
     }
 
   .founder {
@@ -285,10 +286,6 @@ button {
     flex-direction: column;
     align-items: center;
   }
-
-.bounceBall {
-  background-image: url(coverphotoMobile.jpg);
-	}
 
 .contButtons {
   flex-wrap: wrap;
