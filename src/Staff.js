@@ -67,7 +67,7 @@ return  <div>
     <h2 className="section"> Introducing our coaches </h2>
 </div>
 <div className="containerAbout">
-<img src={image} width="300px" alt="pics" />
+<img src={image} width="200px" alt="pics" />
 </div>
 <div className="containerAbout">
     <h3> #{id} - {name} </h3>
@@ -78,7 +78,6 @@ return  <div>
 <div className="containerAbout">
     <p className="parDescriptionStaff"> {description} </p>
 </div>
-
 <div className="btn">
 <button className="buttonstyle" onClick={previousCoach} > PREVIOUS </button>
 <button className="buttonstyle" onClick={nextCoach}>NEXT</button>
